@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>index</title>
-<!-- <style>
+<style>
 /* 3D Card Slide */
 @keyframes slide3D {
   0% {
@@ -29,8 +29,8 @@
 .page-transition {
   animation: slide3D 1s ease-in-out;
 }
-</style> -->
-<style>
+</style>
+<!-- <style>
 /* 3D Card Slide Animation */
 @keyframes slide3D {
   0% {
@@ -55,7 +55,7 @@
 .page-transition {
   animation: slide3D 1s ease-in-out;
 }
-</style>
+</style> -->
 <script>
 // Auto 10s page slider
 setTimeout(() => {
@@ -63,6 +63,7 @@ setTimeout(() => {
 
   // Redirect after animation ends
   setTimeout(() => {
+	document.body.classList.add("page-transition");
     let nextPage;
 
     switch (window.location.pathname.split("/").pop()) {
@@ -78,10 +79,9 @@ setTimeout(() => {
     }
 
     window.location.href = nextPage;
-  }, 5000); // wait for animation
+  }, 500); // wait for animation
 }, 5000); // change every 5 sec
 </script>
-
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
 		--web-view-name: index;
@@ -470,11 +470,13 @@ setTimeout(() => {
 	#Results-oriented__Team__led___ {
 		left: 31.713px;
 		top: 249.416px;
+		/* right: 249.416px; */
+		padding-right: 30px;
 		position: absolute;
 		overflow: visible;
 		width: 358.855px;
 		height: 238.3332977294922px;
-		text-align: left;
+		text-align: justify;
 		font-family: Swiss721BT-Light;
 		font-style: normal;
 		font-weight: normal;
@@ -4142,7 +4144,8 @@ window.application = new Application();
 		</div>
 	</div>
 	<div id="Results-oriented__Team__led___">
-		<span>Results-oriented  Team  led  &  Senior  Bench </span><span></span><br><span>Sales Recruiter with over 10 years of experience </span><br><span>in the IT and marketing industry. Proven ability </span><br><span>to independently handle full life cycle sales and </span><br><span>recruiting activities for US organizations. Skilled </span><br><span>in  client  relationship  management,  high-</span><br><span>volume recruiting, and marketing. proficient in </span><span><br/>business  concepts, industry  knowledge, and</span><span> <br/>various design software.</span>
+		<!-- <span>Results-oriented  Team  led  &  Senior  Bench </span><span></span><br><span>Sales Recruiter with over 10 years of experience </span><br><span>in the IT and marketing industry. Proven ability </span><br><span>to independently handle full life cycle sales and </span><br><span>recruiting activities for US organizations. Skilled </span><br><span>in  client  relationship  management,  high-</span><br><span>volume recruiting, and marketing. proficient in </span><span><br/>business  concepts, industry  knowledge, and</span><span> <br/>various design software.</span> -->
+		 <p>Results-oriented  Team  led  &  Senior  Bench Sales Recruiter with over 10 years of experience in the IT and marketing industry. Proven ability to independently handle full life cycle sales and recruiting activities for US organizations. Skilled in  client  relationship  management,  high-volume recruiting, and marketing. proficient in business  concepts, industry  knowledge, and various design software.</p>
 	</div>
 	<div id="now_i_am_with">
 		<span>now i am with</span>
